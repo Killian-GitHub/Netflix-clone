@@ -1,6 +1,8 @@
 import React from 'react'
 import './App.css'
 import Row from './components/Row'
+import Banner from './components/Banner'
+import Nav from './components/Nav'
 import requests from './utils/requests'
 
 require('dotenv').config()
@@ -9,6 +11,8 @@ function App() {
 
   return (
     <div className="App">
+      <Nav />
+      <Banner />
       <Row
         title='NETFLIX ORIGINALS'
         fetchUrl={requests.fetchNetflixOriginals}
@@ -19,7 +23,7 @@ function App() {
       <Row title='Comédies' fetchUrl={requests.fetchComedyMovies} />
       <Row title='Action et aventures' fetchUrl={requests.fetchActionMovies} />
       <Row title='Romantique' fetchUrl={requests.fetchRomanceMovies} />
-      <Row title='Docummentaires' fetchUrl={requests.fetchDocumentaries} />
+      <Row title="Films d'horreur et surnaturel" fetchUrl={requests.fetchHorrorMovies} />
     </div>
   );
 }
