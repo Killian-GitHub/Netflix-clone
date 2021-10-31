@@ -1,30 +1,28 @@
 import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css'
-import Row from './components/Row'
-import Banner from './components/Banner'
-import Nav from './components/Nav'
-import requests from './utils/requests'
+import HomeScreen from './screens/HomeScreen'
+import LoginScreen from './screens/LoginScreen'
 
 require('dotenv').config()
 
 function App() {
+  const user = null
 
-  return (
-    <div className="App">
-      <Nav />
-      <Banner />
-      <Row
-        title='NETFLIX ORIGINALS'
-        fetchUrl={requests.fetchNetflixOriginals}
-        isLargeRow={true}
-      />
-      <Row title='Les plus gros succès sur Netflix' fetchUrl={requests.fetchTopRated} />
-      <Row title='Tendances actuelles' fetchUrl={requests.fetchTrending} />
-      <Row title='Comédies' fetchUrl={requests.fetchComedyMovies} />
-      <Row title='Action et aventures' fetchUrl={requests.fetchActionMovies} />
-      <Row title='Romantique' fetchUrl={requests.fetchRomanceMovies} />
-      <Row title="Films d'horreur et surnaturel" fetchUrl={requests.fetchHorrorMovies} />
-    </div>
+return (
+  <div className="App">
+    <Router>
+      {!user ? (
+        <LoginScreen />
+      ) : (
+      <Switch>
+        <Route exact path="/">
+          <HomeScreen />
+        </Route>
+      </Switch>
+      )}
+    </Router>
+  </div>
   );
 }
 

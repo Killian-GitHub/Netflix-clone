@@ -1,0 +1,108 @@
+.login {
+  position: relative;
+  height: 100vh;
+  background: url(../../logos/netflix-background.jpeg) center no-repeat;
+  background-size: cover;
+}
+
+.login__logo {
+  position: fixed;
+  left: 0;
+  width: 130px;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.login__btn {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #e50914;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.login__gradient {
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.login__body {
+  position: absolute;
+  top: 30%;
+  width: 100vw;
+  text-align: center;
+  z-index: 1;
+  color: white;
+  padding: 20px 0;
+}
+
+.login__body > h1 {
+  font-size: 3.125rem;
+  max-width: 630px;
+  margin: 0 auto;
+}
+
+.login__body > h2 {
+  font-size: 1.625rem;
+  max-width: 630px;
+  font-weight: 400;
+  margin: 15px auto;
+}
+
+.login__body > h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.login__input {
+  margin: 20px;
+}
+
+.login__input > form {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.login__inputInpt {
+  height: 50px;
+  width: 100%;
+}
+
+.login__inputBtn {
+  margin: 15px auto;
+  padding: 12px 30px;
+  font-size: 1rem;
+  color: white;
+  background-color: #e50914;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 950px) {
+  .login__input > form > input {
+    padding: 10px;
+    outline: none;
+    height: 30px;
+    width: 60%;
+  }
+
+  .login__inputBtn {
+    padding: 17.8px 30px;
+  }
+}
