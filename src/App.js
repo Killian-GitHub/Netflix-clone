@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css'
 import HomeScreen from './screens/HomeScreen'
 import LoginScreen from './screens/LoginScreen'
+import ProfileScreen from './screens/ProfileScreen'
 import { auth } from './firebase'
 import { useDispatch, useSelector } from 'react-redux'
 import { login, logout, selectUser } from './features/userSlice'
@@ -23,11 +24,11 @@ function App() {
           })
         )
       } else {
-        dispatch(logout)
+        dispatch(logout())
       }
     })
     return unsubscribe
-  }, [])
+  }, [dispatch])
 
   return (
     <div className="App">
@@ -36,6 +37,9 @@ function App() {
           <LoginScreen />
         ) : (
           <Switch>
+            <Route exact path="/profile">
+              <ProfileScreen />
+            </Route>
             <Route exact path="/">
               <HomeScreen />
             </Route>

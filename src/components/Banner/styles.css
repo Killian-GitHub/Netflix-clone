@@ -1,55 +1,57 @@
 .banner {
-    background-size: cover;
-    background-position: center;
-    color: white;
-    object-fit: contain;
-    height: 450px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  object-fit: contain;
+  height: 555px;
+  margin-bottom: 20px;
 }
 
 .banner__contents {
-    margin-left: 20px;
-    padding-top: 140px;
+  margin-left: 20px;
+  padding-top: 204px;
 }
 
 .banner__title {
-    font-size: 3rem;
-    font-weight: 800;
-    padding-bottom: 0.3rem;
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
 }
 
 .banner__description {
-    max-width: 400px;
-    height: 80px;
-    line-height: 1.3;
-    padding-top: 1rem;
-    font-size: 15px;
+  max-width: 500px;
+  height: 80px;
+  line-height: 1.3;
+  padding-top: 1rem;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .banner__button {
-    cursor: pointer;
-    color: white;
-    outline: none;
-    border: none;
-    font-weight: 700;
-    border-radius: 0.2vw;
-    padding: 0.5rem 2rem;
-    margin-top: 0.5rem;
-    margin-right: 1rem;
-    background-color: rgba(51, 51, 51, 0.5);
+  cursor: pointer;
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding: 0.8rem 3rem;
+  margin-top: 2.2rem;
+  margin-right: 1rem;
+  background-color: rgba(51, 51, 51, 0.5);
 }
 
 .banner__button:hover {
-    color: black;
-    background-color: #e6e6e6;
-    transition: all 0.2s;
+  color: black;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
 }
 
 .banner__fadeBottom {
-    height: 7.4rem;
-    background-image: linear-gradient(
-        180deg,
-        transparent,
-        rgba(37, 37, 37, 0.61),
-        #111
-    );
+  height: 7.4rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
 }
