@@ -11,15 +11,14 @@ function HomeScreen() {
       <Nav />
       <Banner />
       <Row
-        title="NETFLIX ORIGINALS"
-        fetchUrl={requests.fetchNetflixOriginals}
+        title="Tendances actuelles"
+        fetchUrl={requests.fetchTrending}
         isLargeRow={true}
       />
       <Row
         title="Les plus gros succès sur Netflix"
         fetchUrl={requests.fetchTopRated}
       />
-      <Row title="Tendances actuelles" fetchUrl={requests.fetchTrending} />
       <Row title="Comédies" fetchUrl={requests.fetchComedyMovies} />
       <Row title="Action et aventures" fetchUrl={requests.fetchActionMovies} />
       <Row title="Romantique" fetchUrl={requests.fetchRomanceMovies} />

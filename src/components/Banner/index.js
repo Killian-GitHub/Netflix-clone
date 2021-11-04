@@ -8,7 +8,7 @@ function Banner() {
 
   useEffect(() => {
     axios
-      .get('https://api.themoviedb.org/3' + requests.fetchNetflixOriginals)
+      .get('https://api.themoviedb.org/3' + requests.fetchTrending)
       .then((res) => {
         setMovie(
           res.data.results[
