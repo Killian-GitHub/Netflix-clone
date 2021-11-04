@@ -11,7 +11,8 @@ React, Redux et Firebase.
 
 L'application est mise en ligne a l'adresse suivante :
 
+https://netflix-clone-12394.web.app
+
 Pour vous connecter vous pouvez créer un nouveau compte depuis l'application ou utilisé l'utilisateur suivant :
 
-Email : johndoe@email.com
-Mot de passe : Johndoe1
+Email : johndoe@email.com - Mot de passe : Johndoe1
