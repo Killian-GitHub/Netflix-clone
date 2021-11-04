@@ -55,3 +55,12 @@
     #111
   );
 }
+
+@media screen and (max-width: 660px) {
+  .banner__button {
+    margin-top: 4.5rem;
+  }
+  .banner__fadeBottom {
+    display: none;
+  }
+}

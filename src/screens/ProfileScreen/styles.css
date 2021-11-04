@@ -53,3 +53,23 @@
   border: none;
   cursor: pointer;
 }
+
+@media screen and (max-width: 660px) {
+  .profile__body {
+    width: 80%;
+  }
+  .profile__info {
+    flex-direction: column;
+  }
+  .profile__info > img {
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+  .profile__details {
+    margin: 0;
+  }
+  .profile__signOut {
+    padding: 13px 20px;
+  }
+}
